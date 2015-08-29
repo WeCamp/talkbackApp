@@ -3,11 +3,9 @@
 	<Window class="container">
 		   <Toolbar platform="ios" top="15" extendBackground="true" borderTop="false" borderBottom="false">
             <Items>
-              
                 <FlexSpace/>
                	<Label>TalkBack</Label>
                 <FlexSpace/>
-              
             </Items>
         </Toolbar>
 		 	
@@ -21,7 +19,7 @@
             </Templates>
 
             <ListSection dataCollection="topic">
-                <ListItem id="listItem" height="60" title:text="{title}" excerpt:text="{excerpt}" />
+                <ListItem itemId="{id}" id="listItem" height="60" title:text="{title}" excerpt:text="{excerpt}" />
             </ListSection>
         </ListView>
         </Widget>

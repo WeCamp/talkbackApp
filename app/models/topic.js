@@ -1,7 +1,7 @@
 exports.definition = {
     config: {
         "columns": {
-            id: "Int",
+            id: "INTEGER PRIMARY KEY",
             title: "String",
             excerpt: "String",
             details: "String",
@@ -18,6 +18,7 @@ exports.definition = {
         },
         "URL": "http://0.0.0.0:8080/api/topics/detailed",
         "adapter": {
+        	"idAttribute": "id",
             "type": "restapi",
             "collection_name": "topic"
         },
@@ -27,6 +28,7 @@ exports.definition = {
             _.each(data, function(_entry, index) {
                var entry = {};
                
+               entry.id = _entry.id;
                entry.created_at = _entry.created_at;
                entry.title = _entry.title;
                entry.excerpt = _entry.excerpt.slice(0,50);

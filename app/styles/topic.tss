@@ -1,0 +1,12 @@
+".container": {
+	backgroundColor:"white"
+},
+
+"#title": {
+	"top": 80
+}
+
+"#details": {
+	"top": 140,
+	"width": "90%"
+}

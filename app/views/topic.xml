@@ -1,0 +1,18 @@
+<Alloy>
+	<Window class="container">
+		  	<ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="100%" width="100%">
+            <View id="view">
+            	 <Toolbar platform="ios" top="15" extendBackground="true" borderTop="false" borderBottom="false">
+            <Items>
+            	<Label onClick="closeView">Back</Label>
+                <FlexSpace/>
+               	<Label>TalkBack</Label>
+                <FlexSpace/>
+            </Items>
+        </Toolbar>
+            	<Label id="title"></Label>
+            	<Label id="details"></Label>
+            </View>
+        </ScrollView>
+	</Window>
+</Alloy>
